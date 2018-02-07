@@ -1,7 +1,8 @@
 module ArtistsHelper
 
   def display_artist(song)
-    link_to song.artist_name, song_path(song)
+    binding.pry
+    link_to song.artist_name, artist_path(song.artist)
   end
 
 
